@@ -1,0 +1,24 @@
+
+<div class="row justify-content-center">
+  <div class="card mt-sm-3 col-md-8">
+    <div class="card-body">
+      <h3 class="mb-0">Word Checker</h3>
+      <br>
+      <div class="form-group">
+        Word <input class="form-control mt-2" placeholder="Word to check for" id="identificationWord" type="text"
+        [(ngModel)]="identification"
+        >
+      </div><!-- form-group 1 -->
+      <div class="form-group">
+        Check <input class="form-control mt-2" placeholder="Word to be checked" id="checkWord" type="text"
+        [(ngModel)]="check"
+        >
+      </div><!-- form-group 2 -->
+
+      <p id="result-text">{{ result }}</p>
+            <button (click)="wordChecker(check, identification)">Check</button>
+
+
+    </div><!-- card-body -->
+  </div><!-- card -->
+</div><!-- row -->

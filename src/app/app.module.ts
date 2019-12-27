@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ArtistItemsComponent } from './artist-items/artist-items.component';
 import { SearchArtistsPipe } from './search-artists.pipe';
 import { ArtistDetailsComponent } from './artist-details/artist-details.component';
+import { WordMatchComponent } from './word-match/word-match.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ArtistDetailsComponent } from './artist-details/artist-details.componen
     ArtistItemsComponent,
     SearchArtistsPipe,
     ArtistDetailsComponent,
+    WordMatchComponent,
   ],
   imports: [
     BrowserModule,
