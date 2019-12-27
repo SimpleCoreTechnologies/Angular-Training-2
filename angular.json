@@ -23,9 +23,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/libraries/bootstrap/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/libraries/bootstrap/bootstrap.min.js",
+              "src/libraries/jquery/jquery-3.2.1.slim.min.js",
+              "src/libraries/popper/popper.min.js"
+            ]
           },
           "configurations": {
             "production": {
