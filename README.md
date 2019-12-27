@@ -1,3 +1,3 @@
-# angular-i9blga
+# Angular Training #2
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-i9blga)
+SimpleCore
