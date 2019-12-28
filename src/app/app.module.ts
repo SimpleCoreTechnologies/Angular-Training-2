@@ -10,8 +10,18 @@ import { ArtistItemsComponent } from './artist-items/artist-items.component';
 import { SearchArtistsPipe } from './search-artists.pipe';
 import { ArtistDetailsComponent } from './artist-details/artist-details.component';
 import { WordMatchComponent } from './word-match/word-match.component';
+import { HomeComponent } from './home-page/home.component';
+import { DirectoryComponent} from './directory/directory.component';
 
 const routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'directory',
+    component: DirectoryComponent
+  },
   {
     path: 'word',
     component: WordMatchComponent
@@ -29,6 +39,8 @@ const routes = [
     SearchArtistsPipe,
     ArtistDetailsComponent,
     WordMatchComponent,
+    HomeComponent,
+    DirectoryComponent
   ],
   imports: [
     BrowserModule,

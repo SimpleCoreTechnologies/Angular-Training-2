@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
-  selector: 'sc-training',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-  
+  selector: "sc-training",
+  template: '<router-outlet></router-outlet>',
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent implements OnInit { // Used to declare the type of the variable
+export class AppComponent implements OnInit {
+  // Used to declare the type of the variable
   query: string;
   artists: object;
   currentArtist: object;
@@ -18,15 +18,15 @@ export class AppComponent implements OnInit { // Used to declare the type of the
     this.currentArtist = item;
   }
 
-  constructor( private http: HttpClient) { // This method is used to assign values to the variable
-    this.query = '';
+  constructor(private http: HttpClient) {
+    // This method is used to assign values to the variable
+    this.query = "";
     this.artists = [];
   }
 
   ngOnInit(): void {
-    this.http.get<Object>('../assets/data.json').subscribe(
-      data => {
-        this.artists = data;
-      })
+    this.http.get<Object>("../assets/data.json").subscribe(data => {
+      this.artists = data;
+    });
   }
 }
